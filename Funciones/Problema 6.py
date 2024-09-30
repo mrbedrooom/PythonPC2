@@ -1,14 +1,19 @@
 # Serie de Fibonacci de 0 a 50
 
-def fib(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
+def fibonacci_serie(limite):
 
-n=50
+    a, b = 0, 1
 
-item = fib(n)
-print(f"La serie de Fibonacci del 0 al 50: {item}")
+    fibonacci= [a]
+
+    while b<= limite:
+        fibonacci.append(b)
+        a, b= b, a+b
+
+    return fibonacci
+
+limite= 50
+
+fibonacci_resultado=fibonacci_serie(limite)
+
+print(fibonacci_resultado)
