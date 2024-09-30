@@ -1,0 +1,1 @@
+# Todos los números perfectos menores a 1000
